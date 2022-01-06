@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400&display=swap"
       rel="stylesheet"
     />
 
@@ -24,12 +24,39 @@
   <body>
     <div class="page-wrapper">
       <header class="header">
-        <img src="" alt="" />
+        <img src="./assets/desktop/logo.svg" alt="" />
       </header>
-      <main>
-        <section></section>
-        <section></section>
-        <section></section>
+
+      <main class="features">
+        <h1 class="features__heading">
+          Publish your podcasts <span> everywhere.</span>
+        </h1>
+        <p class="features__paragraph">
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <ul class="features__pod-icons">
+          <li>
+            <img class="features__icon" src="./assets/desktop/spotify.svg" alt="spotify icon" />
+          </li>
+          <li>
+            <img class="features__icon" src="./assets/desktop/apple-podcast.svg" alt="apple podcast icon" />
+          </li>
+          <li>
+            <img class="features__icon" src="./assets/desktop/google-podcasts.svg" alt="google podcasts icon" />
+          </li>
+          <li>
+            <img class="features__icon" src="./assets/desktop/pocket-casts.svg" alt="pocket casts icon" />
+          </li>
+        </ul>
+
+        <form class="features__form">
+          <input class="features__input"  type="email" name="email" placeholder="Email address" required>
+          <button class="features__button" type="submit" >
+            Request Access
+          </button>
+        </form>
       </main>
       <footer></footer>
     </div>
