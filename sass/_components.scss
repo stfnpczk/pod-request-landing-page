@@ -3,6 +3,21 @@
 ----------------------------*/
 body {
   background-color: $black;
+  background-image: url(../assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $black;
+  opacity: 0.8;
+  z-index: -404;
 }
 
 .page-wrapper {
