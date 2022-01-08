@@ -3,24 +3,75 @@
 ----------------------------*/
 body {
   background-color: $black;
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  // min-height: 100vh;
+  // justify-content: center;
+  margin: 0 auto;
+  // overflow: hidden;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 1000px;
+    // align-items: center;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    max-width: 1500px;
+    // align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body::after {
+    // content: url(../assets/desktop/bg-pattern-dots.svg);
+    // position: absolute;
+    // left: 39px;
+    // bottom: 0;
+    // z-index: -1;
+    // margin: 0 auto;
+  }
+}
+
+
+.page-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-wrapper::before {
+    content: url(../assets/desktop/bg-pattern-dots.svg);
+    position: absolute;
+    left: 39px;
+    bottom: -260px;
+    z-index: -1;
+  }
+}
+
+.page-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(../assets/mobile/image-host.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
+  z-index: -1;
+  opacity: 0.2;
 
-body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: $black;
-  opacity: 0.8;
-  z-index: -404;
-}
-
-.page-wrapper {
+  @media only screen and (min-width: 768px) {
+    & {
+      background-image: url(../assets/tablet/image-host.jpg);
+      background-position: top right, bottom;
+      background-size: 491px 767px, 232px 104px;
+      opacity: 0.8;
+    }
+  }
 }
 
 /*----------------------------
@@ -29,48 +80,81 @@ body::after {
 header {
   display: flex;
   justify-content: center;
-  margin: 62px 0 120px;
+  padding: 62px 0 57px;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: flex-start;
+    padding: 50px 0 152px 39px;
+  }
 }
 
 /*----------------------------
       section features
  ----------------------------*/
 .features {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto 0;
   padding: 0 24px 0;
   max-width: 425px;
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    padding: 93px 0 0 39px;
+    margin: 0;
+    text-align: left;
+    background-color: $black;
+    max-width: 635px;
+  }
 
   &__heading {
     color: $green;
     font-size: 26px;
     font-weight: 400;
     line-height: 38px;
-    text-align: center;
     text-transform: uppercase;
 
+    @media only screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
     span {
       color: white;
     }
   }
 
-  &__paragraph{
+  &__paragraph {
     color: $light-gray;
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
-    text-align: center;
-    margin: 16px 0 33px;
+    margin: 31px 0 40px;
+    max-width: 445px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 16px 0 33px;
+    }
   }
 
-  &__pod-icons{
+  &__pod-icons {
     display: flex;
     gap: 20px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (min-width: 768px) {
+      order: 4;
+      position: relative;
+      margin-top: 64px;
+      max-width: 536px;
+    }
   }
 
   &__icon {
-    width: 100%
+    width: 100%;
   }
 
   &__form {
@@ -78,31 +162,44 @@ header {
     flex-direction: column;
     margin: 48px 0 0;
     width: 100%;
-    // max-width: 500px;
+    // max-width: 427px;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+      margin: 0;
+    }
   }
 
   &__input {
     background-color: $dark-gray;
     border: none;
-    border-radius:28px;
+    border-radius: 28px;
     font-size: 14px;
     line-height: 28px;
     font-weight: 400;
     padding: 9px 0 9px 32px;
-    margin: 0 0 16px;
-    color: $white
+    color: $white;
 
+    @media only screen and (min-width: 768px) {
+      width: 395px;
+      padding: 14px 0 14px 32px;
+    }
   }
 
   &__button {
     background-color: $green;
-    border-radius: 28px; 
-    padding: 9px 0 ;
+    border-radius: 28px;
     font-size: 14px;
     font-weight: 700;
     line-height: 28px;
+    padding: 9px 0;
     cursor: pointer;
+    margin-top: 16px;
+
+    @media only screen and (min-width: 768px) {
+      padding: 9px 27px;
+      position: relative;
+      left: -172px;
+    }
   }
 }
-
-
