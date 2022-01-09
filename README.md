@@ -47,8 +47,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Add solution URL here](https://www.frontendmentor.io/solutions/pod-request-access-landing-page-w-ERCIuPP)
+- [Live Demo](https://stfnpczk.github.io/pod-request-landing-page/)
 
 ## My process
 
