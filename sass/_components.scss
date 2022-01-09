@@ -5,16 +5,16 @@ body {
   background-color: $black;
   display: flex;
   // align-items: center;
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
   // overflow: hidden;
 
   @media only screen and (min-width: 768px) {
-    max-width: 1000px;
+    max-width: 62.5rem;
   }
 
   @media only screen and (min-width: 1440px) {
-    max-width: 1600px;
+    max-width: 100rem;
     // min-height: 100vh;
     // align-items: center;
   }
@@ -34,8 +34,8 @@ body {
   .page-wrapper::before {
     content: url(../assets/desktop/bg-pattern-dots.svg);
     position: absolute;
-    left: 39px;
-    bottom: -260px;
+    left: 2.4375rem;
+    bottom: -16.25rem;
     z-index: -1;
   }
 }
@@ -45,7 +45,7 @@ body {
     content: url(../assets/desktop/bg-pattern-dots.svg);
     position: absolute;
     left: unset;
-    bottom: -52px;
+    bottom: -3.25rem;
     right: 0;
     z-index: 2;
   }
@@ -68,7 +68,7 @@ body {
     & {
       background-image: url(../assets/tablet/image-host.jpg);
       background-position: top right;
-      background-size: 491px 767px;
+      background-size: 30.6875rem 47.9375rem;
       opacity: 0.8;
     }
   }
@@ -77,7 +77,7 @@ body {
     & {
       background-image: url(../assets/desktop/image-host.jpg);
       background-position: bottom right;
-      background-size: 888px 640px;
+      background-size: 55.5rem 40rem;
       opacity: 0.8;
     }
   }
@@ -89,15 +89,15 @@ body {
 header {
   display: flex;
   justify-content: center;
-  padding: 62px 0 57px;
+  padding: 3.875rem 0 3.5625rem;
 
   @media only screen and (min-width: 768px) {
     justify-content: flex-start;
-    padding: 50px 0 152px 39px;
+    padding: 3.125rem 0 9.5rem 2.4375rem;
   }
 
   @media only screen and (min-width: 1440px) {
-    padding: 102px 0 103px 165px;
+    padding: 6.375rem 0 6.4375rem 10.3125rem;
   }
 }
 
@@ -108,39 +108,39 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0 auto 0;
-  padding: 0 24px 0;
-  max-width: 425px;
+  padding: 0 1.5rem 0;
+  max-width: 26.5625rem;
   text-align: center;
 
   @media only screen and (min-width: 768px) {
-    padding: 93px 0 0 39px;
+    padding: 5.8125rem 0 0 2.4375rem;
     margin: 0;
     text-align: left;
     background-color: $black;
-    max-width: 635px;
+    max-width: 39.6875rem;
   }
 
   @media only screen and (min-width: 1440px) {
-    padding: 88px 0 0 165px;
-    max-width: 723px;
+    padding: 5.5rem 0 0 10.3125rem;
+    max-width: 45.1875rem;
   }
 
   &__heading {
     color: $green;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 300;
-    line-height: 38px;
+    line-height: 2.375rem;
     text-transform: uppercase;
 
     @media only screen and (min-width: 768px) {
-      font-size: 48px;
-      line-height: 56px;
+      font-size: 3rem;
+      line-height: 3.5rem;
     }
 
     @media only screen and (min-width: 1440px) {
-      font-size: 52px;
-      line-height: 62px;
-      max-width: 665px;
+      font-size: 3.25rem;
+      line-height: 3.875rem;
+      max-width: 41.5625rem;
     }
 
     span {
@@ -150,26 +150,26 @@ header {
 
   &__paragraph {
     color: $light-gray;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 300;
-    line-height: 25px;
-    margin: 31px 0 40px;
-    max-width: 445px;
+    line-height: 1.5625rem;
+    margin: 1.9375rem 0 2.5rem;
+    max-width: 27.8125rem;
 
     @media only screen and (min-width: 768px) {
-      font-size: 18px;
-      line-height: 28px;
-      margin: 16px 0 33px;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      margin: 1rem 0 2.0625rem;
     }
 
     @media only screen and (min-width: 1440px) {
-      margin: 24px 0 40px;
+      margin: 1.5rem 0 2.5rem;
     }
   }
 
   &__pod-icons {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -177,8 +177,8 @@ header {
     @media only screen and (min-width: 768px) {
       order: 4;
       position: relative;
-      margin-top: 64px;
-      max-width: 536px;
+      margin-top: 4rem;
+      max-width: 33.5rem;
     }
   }
 
@@ -190,9 +190,9 @@ header {
   &__form {
     display: flex;
     flex-direction: column;
-    margin: 48px 0 0;
+    margin: 3rem 0 0;
     width: 100%;
-    // max-width: 427px;
+    // max-width: 26.6875rem;
 
     @media only screen and (min-width: 768px) {
       display: block;
@@ -203,45 +203,45 @@ header {
   &__input {
     background-color: $dark-gray;
     border: none;
-    border-radius: 28px;
-    font-size: 14px;
-    line-height: 28px;
+    border-radius: 1.75rem;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
     font-weight: 400;
-    padding: 9px 0 9px 32px;
+    padding: 0.5625rem 0 0.5625rem 2rem;
     color: $white;
 
     @media only screen and (min-width: 768px) {
-      width: 395px;
-      padding: 14px 0 14px 32px;
+      width: 24.6875rem;
+      padding: 0.875rem 0 0.875rem 2rem;
     }
   }
 
   &__button {
     background-color: $green;
-    border-radius: 28px;
-    font-size: 14px;
+    border-radius: 1.75rem;
+    font-size: 0.875rem;
     font-weight: 700;
-    line-height: 28px;
-    padding: 9px 0;
+    line-height: 1.75rem;
+    padding: 0.5625rem 0;
     cursor: pointer;
-    margin-top: 16px;
+    margin-top: 1rem;
 
     &:hover {
       background-color: hsla(157, 100%, 85%, 1);
     }
 
     @media only screen and (min-width: 768px) {
-      padding: 9px 27px;
+      padding: 0.5625rem 1.6875rem;
       position: relative;
-      left: -172px;
+      left: -10.75rem;
     }
   }
 
   &__error-message {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
     color: hsla(0, 96%, 61%, 1);
     display: none;
-    margin: 8px 0 0 32px;
+    margin: 0.5rem 0 0 2rem;
   }
 }
