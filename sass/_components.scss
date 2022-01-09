@@ -1,5 +1,5 @@
 /*----------------------------
- layout
+ layout and background images
 ----------------------------*/
 body {
   background-color: $black;
@@ -20,23 +20,14 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  body::after {
-    // content: url(../assets/desktop/bg-pattern-dots.svg);
-    // position: absolute;
-    // left: 39px;
-    // bottom: 0;
-    // z-index: -1;
-    // margin: 0 auto;
-  }
-}
-
-
 .page-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
-  // margin: 0 auto;
+  height: 100vh;
+
+  @media only screen and (min-width: 768px) {
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -53,7 +44,7 @@ body {
   .page-wrapper::before {
     content: url(../assets/desktop/bg-pattern-dots.svg);
     position: absolute;
-    left:unset;
+    left: unset;
     bottom: -52px;
     right: 0;
     z-index: 2;
@@ -90,8 +81,6 @@ body {
       opacity: 0.8;
     }
   }
-
-
 }
 
 /*----------------------------
@@ -236,10 +225,22 @@ header {
     cursor: pointer;
     margin-top: 16px;
 
+    &:hover {
+      background-color: hsla(157, 100%, 85%, 1);
+    }
+
     @media only screen and (min-width: 768px) {
       padding: 9px 27px;
       position: relative;
       left: -172px;
     }
+  }
+
+  &__error-message {
+    font-size: 14px;
+    line-height: 14px;
+    color: hsla(0, 96%, 61%, 1);
+    display: none;
+    margin: 8px 0 0 32px;
   }
 }

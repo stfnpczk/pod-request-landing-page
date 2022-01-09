@@ -20,6 +20,7 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -67,7 +68,7 @@
           </li>
         </ul>
 
-        <form class="features__form">
+        <form class="features__form" novalidate>
           <input
             class="features__input"
             type="email"
@@ -76,6 +77,9 @@
             required
           />
           <button class="features__button" type="submit">Request Access</button>
+          <span class="features__error-message"
+            >Oops! Please check your email
+          </span>
         </form>
       </main>
       <footer></footer>
