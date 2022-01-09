@@ -128,7 +128,7 @@ header {
   &__heading {
     color: $green;
     font-size: 26px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 38px;
     text-transform: uppercase;
 
@@ -151,7 +151,7 @@ header {
   &__paragraph {
     color: $light-gray;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 25px;
     margin: 31px 0 40px;
     max-width: 445px;
@@ -184,6 +184,7 @@ header {
 
   &__icon {
     width: 100%;
+    opacity: 0.5;
   }
 
   &__form {
